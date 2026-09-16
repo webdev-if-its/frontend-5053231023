@@ -3,6 +3,7 @@
 // yang memuat teks "Nama: {nama}" dan "NRP: {nrp}" (boleh di elemen
 // terpisah, asal berada di dalam satu pembungkus). Lihat SOAL.md untuk
 // kontrak lengkap.
-export function Profil(props: any) {
-  return <div>TODO</div>
+export function Profil(props: { nama: string; nrp: string }) {
+  
+  return <div>Nama: {props.nama}, NRP: {props.nrp}</div>
 }

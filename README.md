@@ -40,10 +40,13 @@ App.tsx berufungsi memangil function dari identitas.ts, isi halaman, memberikan 
 Commit adalah seperti checkpoint dinatara perubahan perubahan kecil yang kita buat dalam project dan bersifat lokal jika belum dilakukan push, jadi push adalah tahap pengumpulan dari banyaknya commit yang kita lakukan dan dapat di simpan di github
 
 ## JSX vs TSX
-(tulis di sini)
+JSX dipakai utk menulis struktur UI di JS, TSX adalah supperset JSX
 
 ## Kenapa Union Type untuk Status
-(tulis di sini)
+Union type lebih baik daripada string biasa karena hanya mengizinkan nilai status yang sudah ditentukan, yaitu pending, selesai, atau batal
 
 ## Refleksi
-(tulis di sini)
+JSX/TSX membuat saya dapat menggabungkan struktur tampilan dengan logika komponen dalam satu file yang berbeda dari HTML biasa, JSX mendukung props, children, ekspresi JavaScript, dan pengecekan tipe dari TypeScript
+
+## Refleksi Pertemuan 3
+Conditional renderingmengubah cara menampilkan sebuah data daripada hanya menyembunyikan nya, dan juga tailwind berekaj sangat efesien menurut syaa jauh lebih mudah dibaca dibanding css biasa
