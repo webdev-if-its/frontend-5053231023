@@ -50,3 +50,10 @@ JSX/TSX membuat saya dapat menggabungkan struktur tampilan dengan logika kompone
 
 ## Refleksi Pertemuan 3
 Conditional renderingmengubah cara menampilkan sebuah data daripada hanya menyembunyikan nya, dan juga tailwind berekaj sangat efesien menurut syaa jauh lebih mudah dibaca dibanding css biasa
+## Refleksi Pertemuan 4
+
+Variabel biasa hanya hidup selama satu kali fungsi komponen berjalan, jadi nilainya hilang dan tidak memicu tampilan baru saat berubah, lalu State (useState) disimpan React di antara render, saat setter dipanggil, React render ulang komponen jadi ui ikut berubah, Karena data yang berubah dan harus terlihat di layar perlu disimpan sebagai state
+
+## Refleksi Pertemuan 6
+
+Efek yang memasang timer atau listener wajib  cleanup, karena efek jalan ulang setiap dependensinya berubah dan saat komponen dilepas, jika tanpa cleanup, timer lama tetap berjalan dan memanggil setState di komponen yang sudah tidak ada, sehingga timer menumpuk, React sengaja memasang, melepas, lalu memasang efek lagi saat development, jadi efek yang lupa cleanup langsung terlihat sebagai dobel
